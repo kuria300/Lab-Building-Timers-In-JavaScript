@@ -19,13 +19,14 @@ function countdownTimer(startTime, interval) {
   // Return the timer ID for validation
   const timerId= setInterval(()=>{
     console.log(startTime)
+   
     startTime--
     if(startTime === 0){
       clearInterval(timerId)
     }
+    
   }, interval)
 
-  
 
   return timerId
 
